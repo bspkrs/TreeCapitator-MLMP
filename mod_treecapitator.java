@@ -41,8 +41,6 @@ public class mod_treecapitator extends BaseModMp
     public static boolean allowItemDamage = TreeCapitator.allowItemDamage;
     @MLProp(info=TreeCapitator.allowMoreBlocksThanDamageDesc)
     public static boolean allowMoreBlocksThanDamage = TreeCapitator.allowMoreBlocksThanDamage;
-    @MLProp(info=TreeCapitator.damageMultiplierDesc)
-    public static float damageMultiplier = TreeCapitator.damageMultiplier;
     @MLProp(info=TreeCapitator.sneakActionDesc)
     public static String sneakAction = TreeCapitator.sneakAction;
     @MLProp(info=TreeCapitator.maxBreakDistanceDesc + "\n\n**ONLY EDIT WHAT IS BELOW THIS**")
@@ -52,7 +50,7 @@ public class mod_treecapitator extends BaseModMp
     private String versionURL = "https://dl.dropbox.com/u/20748481/Minecraft/1.3.1/treeCapitatorMLMP.version";
     private String mcfTopic = "http://www.minecraftforum.net/topic/1009577-";
 
-    public mod_treecapitator() 
+    public mod_treecapitator()
     {
         versionChecker = new ModVersionChecker(getName(), getVersion(), versionURL, mcfTopic, ModLoader.getLogger());
         TreeCapitator.init();
@@ -69,7 +67,6 @@ public class mod_treecapitator extends BaseModMp
         TreeCapitator.disableCreativeDrops = disableCreativeDrops;
         TreeCapitator.allowItemDamage = allowItemDamage;
         TreeCapitator.allowMoreBlocksThanDamage = allowMoreBlocksThanDamage;
-        TreeCapitator.damageMultiplier = damageMultiplier;
         TreeCapitator.sneakAction = sneakAction;
         TreeCapitator.maxBreakDistance = maxBreakDistance;
     }
