@@ -50,7 +50,7 @@ public class mod_treecapitator extends BaseModMp
     private String versionURL = "https://dl.dropbox.com/u/20748481/Minecraft/1.3.1/treeCapitatorMLMP.version";
     private String mcfTopic = "http://www.minecraftforum.net/topic/1009577-";
 
-    public mod_treecapitator()
+    public mod_treecapitator() 
     {
         versionChecker = new ModVersionChecker(getName(), getVersion(), versionURL, mcfTopic, ModLoader.getLogger());
         TreeCapitator.init();
